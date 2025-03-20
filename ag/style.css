@@ -1,0 +1,140 @@
+@charset "UTF-8";
+@font-face {
+    font-family: fontealla;
+    src: url(fontes/Technocra.otf);
+}
+
+:root {
+    --cor01: #1F438C; 
+    --cor02: #307CBF; 
+    --cor03: #49B1F2; 
+    --cor04: #6BCCF2; 
+    --cor05: #F2F2F2; 
+    --fontealla: 'fontealla';
+    --fontenormal: Verdana, cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor05);
+    font-size: 18px; /* Aumentando a fonte padrão */
+}
+
+header {
+    margin: 0;
+    background-image: linear-gradient(to bottom, var(--cor03), var(--cor04));
+    padding: 25px 0;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-family: var(--fontenormal);
+    font-size: 28px; /* Maior para melhor destaque */
+}
+
+main {
+    background-color: var(--cor05);
+    margin: auto;
+    min-width: 280px;
+    max-width: 900px;
+    padding: 15px 25px;
+}
+
+main h1 {
+    color: var(--cor01);
+    font-family: var(--fontealla);
+    font-weight: normal;
+    text-indent: 10px;
+    font-size: 36px; /* Aumentado para melhorar em mobile */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+main p {
+    font-size: 20px; /* Melhor leitura */
+    text-indent: 10px;
+    padding-bottom: 15px;
+}
+
+main a {
+    font-size: 20px; /* Links mais visíveis */
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--cor01);
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+main img {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+aside {
+    background-color: var(--cor04);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.271);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: var(--cor01);
+    font-size: 20px;
+}
+
+aside h2 {
+    text-align: center;
+    background-color: var(--cor03);
+    margin: -15px -15px 0 -15px;
+    padding: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 24px; /* Títulos de aside maiores */
+}
+
+ul {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    columns: 1; /* Melhor para telas pequenas */
+    list-style-position: inside;
+    list-style-type: square;
+    text-decoration: underline;
+    color: var(--cor01);
+    font-size: 20px;
+}
+
+footer {
+    background-color: var(--cor01);
+    text-align: center;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    font-size: 18px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.audio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+audio {
+    width: 100%;
+    max-width: 400px;
+}
